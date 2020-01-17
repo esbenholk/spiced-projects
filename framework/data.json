@@ -1,0 +1,27 @@
+[
+    {
+        "name": "ticker",
+        "directory": "./ticker",
+        "descriptions": "the ticker is an animated array of links defined in html and repositioned dynamically with javascript"
+    },
+    {
+        "name": "connect4",
+        "directory": "./connect4/",
+        "descriptions": "the evergreen game goes online. fight the circular dogs to win"
+    },
+    {
+        "name": "panes",
+        "directory": "./panes",
+        "descriptions": "the panes are images controlled through eventhandling and mousemovement"
+    },
+    {
+        "name": "spotify",
+        "directory": "./spotify",
+        "descriptions": "the spotify search bar allows you to use the spotify api available through elegant croissant to search your favorite artists"
+    },
+    {
+        "name": "carousel",
+        "directory": "./carousel",
+        "descriptions": "ever wondered how to build a galery of rotating pics? "
+    }
+]

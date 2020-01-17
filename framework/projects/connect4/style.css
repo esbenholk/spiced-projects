@@ -1,0 +1,105 @@
+body {
+    box-sizing: border-box;
+    background: linear-gradient(rgb(175, 255, 253), pink, blue);
+    display: flex;
+    justify-content: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+h1 {
+    color: blue;
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: 2px 2px white;
+}
+.board {
+    display: flex;
+}
+.hole {
+    position: relative;
+    box-sizing: content-box;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 40px rgb(132, 255, 169) solid;
+    transform: translate(-30px, -30px);
+    /* transform-origin: center;
+    transition: border-width 0.6s linear; */
+    z-index: 99;
+}
+.slot {
+    /* position: relative; */
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.player1 {
+    background-image: url(player1.jpg);
+    /* transform-origin: center; */
+}
+.player2 {
+    background-image: url(player2.jpg);
+    /* transform-origin: center; */
+}
+
+.winner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 120%;
+    background: rgba(248, 188, 255, 0.5);
+    visibility: hidden;
+    z-index: 100;
+    display: flex;
+}
+.winnermessage {
+    position: absolute;
+    top: 40%;
+    font-size: 100px;
+    z-index: 102;
+    visibility: hidden;
+}
+.cursor {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.cursorAnimation {
+    z-index: 999999;
+    animation-name: giant;
+    animation-duration: 10s;
+    transition: transform;
+    animation-iteration-count: infinite;
+}
+
+.animation {
+    animation-name: twirlWin;
+    animation-duration: 3s;
+    transition: transform;
+    animation-iteration-count: infinite;
+    z-index: 101;
+}
+
+@keyframes twirlWin {
+    100% {
+        transform: scale(9);
+    }
+}
+@keyframes giant {
+    50% {
+        transform: scale(10);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,163 @@
+body {
+    box-sizing: border-box;
+    background: linear-gradient(292deg, #00ffbd, #baff00, #00fff1);
+}
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border: 2px pink solid;
+    width: 1275px;
+    height: 800px;
+    z-index: 100;
+}
+#top {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999999;
+}
+#bottom {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999999;
+}
+#left {
+    position: fixed;
+    left: 0;
+    bottom: 50%;
+    /* transform: translateX(+50%); */
+    transform: translateY(+50%);
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    z-index: 999999;
+}
+#right {
+    position: fixed;
+    bottom: 50%;
+    right: 0;
+    /* transform: translateX(-50%); */
+    transform: translateY(+50%);
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    margin: 0;
+    z-index: 999999;
+}
+
+/* styling for stuck headlines in main template */
+.headline {
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px hotpink;
+    font-size: 30px;
+    text-align: center;
+    font-family: helvetica;
+    animation: glow 10s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 2px 2px 500px hotpink, 2px 2px 50px yellow;
+    }
+    to {
+        text-shadow: 2px 2px 100px 50px magenta, 2px 2px 100px hotpink;
+    }
+}
+
+/* styling for footer stuck on main */
+footer {
+    font-size: 10px;
+    font-style: italic;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+#houseofkillinghome {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 999999;
+    font-size: 10px;
+    font-style: italic;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+/* styling for home */
+#project-container {
+    position: absolute;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    z-index: 999999;
+}
+
+.show {
+    width: 180px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.screenshot {
+    float: bottom;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+.screenshot:hover {
+    opacity: 0.5;
+}
+
+h2 {
+    font-family: helvetica;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px hotpink;
+    margin: 0;
+}
+p {
+    font-family: helvetica;
+    font-size: 15px;
+}
+
+a {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.descriptions-menu {
+    background: linear-gradient(292deg, #00ffbd, #baff00, #00fff1);
+    background: ;
+    width: 70%;
+    position: absolute;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+
+    z-index: 999999;
+    display: flex;
+    flex-direction: row;
+}
+.detailshot {
+    float: bottom;
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+}
+
+#main-title {
+    z-index: 999999999999;
+}

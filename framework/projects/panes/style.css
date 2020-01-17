@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(0, 255, 221);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    height: 400px;
+    width: 800px;
+    box-sizing: border-box;
+    position: absolute;
+    overflow: hidden;
+    top: 20%;
+}
+
+.bar {
+    position: absolute;
+    border: 4px blue solid;
+    background-color: yellow;
+    height: 100%;
+    width: 20px;
+    z-index: 500;
+    left: 790px;
+    transform: translateX(-50%);
+}
+
+.top {
+    z-index: 100;
+    border: 4px blue solid;
+    width: 800px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.bottom {
+    z-index: 10;
+    border: 4px blue solid;
+    width: 800px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+img {
+    width: 800px;
+}
+
+img::selection {
+    background: transparent;
+}
