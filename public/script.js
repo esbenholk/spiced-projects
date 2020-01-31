@@ -22,8 +22,8 @@
     );
     if (window.location.pathname == "/houseofkilling") {
       gradient.addColorStop(0, `rgba(0,0,255,0.1)`);
-      gradient.addColorStop(0.5, `rgba(0,200,100,0.1)`);
-      gradient.addColorStop(1, `rgba(20,0,20, 1)`);
+      gradient.addColorStop(0.5, `rgba(0,200,100,0.01)`);
+      gradient.addColorStop(1, `rgba(20,0,20, 0)`);
     } else {
       gradient.addColorStop(0, `rgba(255,0,20,0.1)`);
       gradient.addColorStop(0.5, `rgba(255,0,200,0.1)`);
